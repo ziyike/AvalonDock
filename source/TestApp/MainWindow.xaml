@@ -139,7 +139,7 @@
 								IconSource="/TestApp;component/Images/address-book--pencil.png">
 								<TextBox Text="{Binding TestTimer, Mode=OneWay, StringFormat='AutoHide Attached to Timer ->\{0\}'}" />
 							</LayoutAnchorable>
-							<LayoutAnchorable Title="AutoHide2 Content" ContentId="AutoHide2Content">
+							<LayoutAnchorable Title="AutoHide2 Content" ContentId="AutoHide2Content" >
 								<StackPanel Orientation="Vertical">
 									<TextBox />
 									<TextBox />

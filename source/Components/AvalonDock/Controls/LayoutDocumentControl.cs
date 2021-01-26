@@ -1,4 +1,4 @@
-﻿/************************************************************************
+/************************************************************************
    AvalonDock
 
    Copyright (C) 2007-2013 Xceed Software Inc.
@@ -110,7 +110,9 @@ namespace AvalonDock.Controls
 		/// <inheritdoc />
 		protected override void OnPreviewMouseLeftButtonUp(MouseButtonEventArgs e)
 		{
+#if DEBUG
 			Debug.WriteLine($"{nameof(OnPreviewMouseLeftButtonUp)}: {LayoutItem.ContentId}");
+#endif
 			SetIsActive();
 			base.OnPreviewMouseLeftButtonUp(e);
 		}
