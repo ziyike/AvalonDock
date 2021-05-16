@@ -19,8 +19,11 @@
 	xmlns:avalonDockProperties="clr-namespace:AvalonDock.Properties"
 	xmlns:shell="clr-namespace:Microsoft.Windows.Shell">
 
+	<FontFamily x:Key="DockDefaultFontFamily">思源黑体</FontFamily>
+
 	<!--  DocumentPaneControlStyle  -->
 	<Style x:Key="DocumentPaneControlStyle" TargetType="{x:Type avalonDockControls:LayoutDocumentPaneControl}">
+		<Setter Property="FontFamily" Value="{StaticResource DockDefaultFontFamily}"/>
 		<Setter Property="Template">
 			<Setter.Value>
 				<ControlTemplate TargetType="{x:Type avalonDockControls:LayoutDocumentPaneControl}">
@@ -172,6 +175,7 @@
 
 	<!--  AnchorablePaneControlStyle  -->
 	<Style x:Key="AnchorablePaneControlStyle" TargetType="{x:Type avalonDockControls:LayoutAnchorablePaneControl}">
+		<Setter Property="FontFamily" Value="{StaticResource DockDefaultFontFamily}"/>
 		<Setter Property="Foreground" Value="{Binding Model.Root.Manager.Foreground, RelativeSource={RelativeSource Self}}" />
 		<Setter Property="Background" Value="{Binding Model.Root.Manager.Background, RelativeSource={RelativeSource Self}}" />
 		<Setter Property="TabStripPlacement" Value="Bottom" />
@@ -295,6 +299,7 @@
 	</Style>
 
 	<Style TargetType="avalonDockControls:AnchorablePaneTitle">
+		<Setter Property="FontFamily" Value="{StaticResource DockDefaultFontFamily}"/>
 		<Setter Property="Template">
 			<Setter.Value>
 				<ControlTemplate>
@@ -413,6 +418,7 @@
 	</ControlTemplate>
 
 	<Style x:Key="{x:Type avalonDockControls:OverlayWindow}" TargetType="{x:Type avalonDockControls:OverlayWindow}">
+		<Setter Property="FontFamily" Value="{StaticResource DockDefaultFontFamily}"/>
 		<Setter Property="Background" Value="Transparent" />
 		<Setter Property="Template">
 			<Setter.Value>
@@ -653,6 +659,7 @@
 
 	<!--  DockingManager  -->
 	<Style x:Key="{x:Type avalonDock:DockingManager}" TargetType="{x:Type avalonDock:DockingManager}">
+		<Setter Property="FontFamily" Value="{StaticResource DockDefaultFontFamily}"/>
 		<Setter Property="DocumentPaneControlStyle" Value="{StaticResource DocumentPaneControlStyle}" />
 		<Setter Property="AnchorablePaneControlStyle" Value="{StaticResource AnchorablePaneControlStyle}" />
 		<Setter Property="AnchorSideTemplate" Value="{StaticResource AnchorSideTemplate}" />
@@ -725,6 +732,7 @@
 
 	<!--  LayoutGridResizerControl  -->
 	<Style x:Key="{x:Type avalonDockControls:LayoutGridResizerControl}" TargetType="{x:Type avalonDockControls:LayoutGridResizerControl}">
+		<Setter Property="FontFamily" Value="{StaticResource DockDefaultFontFamily}"/>
 		<Setter Property="Background" Value="Transparent" />
 		<Setter Property="Template">
 			<Setter.Value>
@@ -736,6 +744,7 @@
 	</Style>
 
 	<Style TargetType="{x:Type avalonDockControls:LayoutDocumentControl}">
+		<Setter Property="FontFamily" Value="{StaticResource DockDefaultFontFamily}"/>
 		<Setter Property="Template">
 			<Setter.Value>
 				<ControlTemplate TargetType="{x:Type avalonDockControls:LayoutDocumentControl}">
@@ -754,6 +763,7 @@
 	</Style>
 
 	<Style TargetType="{x:Type avalonDockControls:LayoutDocumentTabItem}">
+		<Setter Property="FontFamily" Value="{StaticResource DockDefaultFontFamily}"/>
 		<Setter Property="Template">
 			<Setter.Value>
 				<ControlTemplate TargetType="{x:Type avalonDockControls:LayoutDocumentTabItem}">
@@ -823,6 +833,7 @@
 	</Style>
 
 	<Style TargetType="{x:Type avalonDockControls:LayoutAnchorableTabItem}">
+		<Setter Property="FontFamily" Value="{StaticResource DockDefaultFontFamily}"/>
 		<Setter Property="Template">
 			<Setter.Value>
 				<ControlTemplate TargetType="{x:Type avalonDockControls:LayoutAnchorableTabItem}">
@@ -849,6 +860,7 @@
 	</Style>
 
 	<Style TargetType="{x:Type avalonDockControls:LayoutAnchorableControl}">
+		<Setter Property="FontFamily" Value="{StaticResource DockDefaultFontFamily}"/>
 		<Setter Property="Template">
 			<Setter.Value>
 				<ControlTemplate TargetType="{x:Type avalonDockControls:LayoutAnchorableControl}">
@@ -915,6 +927,7 @@
 	</Style>
 
 	<Style x:Key="{x:Type avalonDockControls:LayoutDocumentFloatingWindowControl}" TargetType="{x:Type avalonDockControls:LayoutDocumentFloatingWindowControl}">
+		<Setter Property="FontFamily" Value="{StaticResource DockDefaultFontFamily}"/>
 		<Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" />
 		<Setter Property="BorderBrush" Value="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}" />
 		<Setter Property="BorderThickness" Value="3" />
@@ -1010,6 +1023,7 @@
 	</Style>
 
 	<Style x:Key="{x:Type avalonDockControls:LayoutAnchorableFloatingWindowControl}" TargetType="{x:Type avalonDockControls:LayoutAnchorableFloatingWindowControl}">
+		<Setter Property="FontFamily" Value="{StaticResource DockDefaultFontFamily}"/>
 		<Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" />
 		<Setter Property="BorderBrush" Value="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}" />
 		<Setter Property="BorderThickness" Value="3" />
@@ -1132,6 +1146,7 @@
 	</Style>
 
 	<Style x:Key="{x:Type avalonDockControls:NavigatorWindow}" TargetType="{x:Type avalonDockControls:NavigatorWindow}">
+		<Setter Property="FontFamily" Value="{StaticResource DockDefaultFontFamily}"/>
 		<Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" />
 		<Setter Property="SizeToContent" Value="WidthAndHeight" />
 		<Setter Property="ResizeMode" Value="NoResize" />
